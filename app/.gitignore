@@ -1,0 +1,14 @@
+# Ignore heavy model files
+app/src/main/assets/*
+!app/src/main/assets/README.md
+
+# Android defaults
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx

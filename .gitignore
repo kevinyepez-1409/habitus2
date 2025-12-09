@@ -1,0 +1,22 @@
+# Android default ignore rules
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Ignore generated files
+*.apk
+*.aar
+*.aab
+
+# Keystores (security)
+*.jks
+*.keystore
+
+# Ignore MacOS junk
+._*
