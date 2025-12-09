@@ -195,7 +195,7 @@ Open a Pull Request with a clear description
 Suggestions, issues, and ideas are welcome in the Issues tab.
 
 📜 License
-MIT
+This project is licensed under the MIT License — a permissive open-source license that allows reuse, modification, distribution, and private/commercial use.
 
 📧 Contact
 
