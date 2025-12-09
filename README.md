@@ -72,3 +72,137 @@ Place these files in:
 
 ```text
 app/src/main/assets/
+🚀 Getting Started (Run the App)
+
+Clone this repository
+
+git clone https://github.com/kevinyepez-1409/habitus2.git
+cd habitus2
+
+
+Open the project in Android Studio
+
+File > Open... → select the habitus2 folder
+
+Let Gradle sync and resolve dependencies
+
+Download model files
+
+Go to the Google Drive link
+
+Download bert_28.onnx and vocab_bert.txt
+
+Copy them into: app/src/main/assets/
+
+Build & run
+
+Select an emulator or a physical device
+
+Click Run ▶ in Android Studio
+
+🧪 How It Works (In-App Flow)
+
+User writes a short text describing how they feel (English text works best).
+
+The app:
+
+Cleans and tokenizes the input with WordPieceTokenizer
+
+Creates input_ids, attention_mask (and token_type_ids if required)
+
+Runs the ONNX BERT model via EmotionAnalyzer
+
+The logits of multiple labels are mapped/grouped into the 7 Ekman emotions.
+
+The UI displays:
+
+The dominant emotion + confidence percentage
+
+A detailed emotion profile with percentages for all 7 emotions
+
+Example (mocked):
+
+--- EMOTION ANALYSIS ---
+Text: I feel exhausted and overwhelmed today...
+
+Dominant emotion: Sadness 😢
+Confidence: 82.4%
+
+Detailed emotion profile:
+• Sadness 😢: 82.4%
+• Fear 😱:    41.0%
+• Neutral 😐: 15.2%
+• Anger 😡:   4.5%
+• Joy 😂:     1.3%
+• Surprise 😲: 0.9%
+• Disgust 🤢: 0.4%
+
+📂 Project Structure (Simplified)
+habitus2/
+ ├─ app/
+ │   ├─ src/
+ │   │   ├─ main/
+ │   │   │   ├─ AndroidManifest.xml
+ │   │   │   ├─ assets/
+ │   │   │   │   ├─ bert_28.onnx          # (not tracked in Git)
+ │   │   │   │   ├─ vocab_bert.txt       # (not tracked in Git)
+ │   │   │   │   └─ README.md
+ │   │   │   ├─ java/com/example/habitus2/
+ │   │   │   │   ├─ MainActivity.kt
+ │   │   │   │   ├─ EmotionAnalyzer.kt
+ │   │   │   │   └─ WordPieceTokenizer.kt
+ │   │   │   └─ res/
+ │   │   │       ├─ layout/activity_main.xml
+ │   │   │       └─ values/...
+ │   ├─ build.gradle.kts
+ │   └─ ...
+ ├─ build.gradle.kts
+ ├─ settings.gradle.kts
+ └─ .gitignore
+
+🔐 Privacy & Offline Behavior
+
+All emotion analysis is done on device.
+
+The text is not sent to any external server by this app.
+
+Network access is only needed to:
+
+Download the APK / install the app
+
+Download the model files from Google Drive (one-time setup)
+
+🧭 Roadmap / Ideas
+
+📊 Add history of past analyses (local database)
+
+🌐 Add support for Spanish text fine-tuning
+
+📱 Create a more detailed dashboard for emotional trends
+
+🔀 Plug this module into a larger mental-health journaling app
+
+🤝 Contributing
+
+If you want to collaborate:
+
+Fork the repository
+
+Create a new branch for your feature or fix
+
+Open a Pull Request with a clear description
+
+Suggestions, issues, and ideas are welcome in the Issues tab.
+
+📜 License
+
+Note: Choose a license for your project (e.g., MIT, Apache-2.0) and add the corresponding LICENSE file.
+Until then, the code is shared for educational and research purposes.
+
+📧 Contact
+
+If you are using Habitus2 for research, teaching, or would like to collaborate, feel free to open an issue in the repository or reach out through GitHub.
+
+
+Si quieres, después hacemos otra versión del README más “académica” enfocada en tu paper (objetivo, metodología, resultados preliminares, etc.), y otra más visual con screenshots cuando tomes capturas de la app.
+::contentReference[oaicite:0]{index=0}
