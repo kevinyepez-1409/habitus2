@@ -195,14 +195,10 @@ Open a Pull Request with a clear description
 Suggestions, issues, and ideas are welcome in the Issues tab.
 
 📜 License
-
-Note: Choose a license for your project (e.g., MIT, Apache-2.0) and add the corresponding LICENSE file.
-Until then, the code is shared for educational and research purposes.
+MIT
 
 📧 Contact
 
 If you are using Habitus2 for research, teaching, or would like to collaborate, feel free to open an issue in the repository or reach out through GitHub.
 
 
-Si quieres, después hacemos otra versión del README más “académica” enfocada en tu paper (objetivo, metodología, resultados preliminares, etc.), y otra más visual con screenshots cuando tomes capturas de la app.
-::contentReference[oaicite:0]{index=0}
